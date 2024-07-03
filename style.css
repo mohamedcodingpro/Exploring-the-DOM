@@ -1,0 +1,108 @@
+/* style.css */
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #555555;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Message container */
+.message-container {
+    margin-bottom: 30px;
+}
+
+.myMessage {
+    padding: 15px;
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.myMessage:hover {
+    background-color: #f0f0f0;
+}
+
+.theMessageButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.theMessageButton:hover {
+    background-color: #0056b3;
+}
+
+.theInputValue {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    width: calc(100% - 100px);
+    max-width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Fruits list */
+.fruits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fruits li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Dark mode */
+.darkmode {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .theInputValue {
+        width: 100%;
+        margin-right: 0;
+    }
+}
