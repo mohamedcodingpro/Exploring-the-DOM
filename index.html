@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring the DOM</title>
+    <l
+    <title>Widget with AlpineJS</title>
     <link rel="stylesheet" href="style.css">
+    <style >
+        .darkmode {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="container">
-        <h2>Exploring the DOM</h2>
-
-        <div class="message-container">
-            <div class="myMessage"></div>
-            <button class="theMessageButton">Show Message</button>
+    <div>
+        <div class="myMessage"> </div>
+        <div>
             <input type="text" class="theInputValue" placeholder="Enter a message">
+            <button class="theMessageButton">Show Message</button>
+            <button class="removeMessageButton">Remove Message</button>
         </div>
-
-        <h3>Fruits List</h3>
-        <ul class="fruits"></ul>
     </div>
-
-    <script src="index.js" defer></script>
+    <div>
+        <input type="text" class="newFruitInput" placeholder="Add a new fruit">
+        <button class="addFruitButton">Add Fruit</button>
+    </div>
+    <ul class="fruits"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
